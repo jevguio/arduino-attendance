@@ -12,9 +12,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="{{ config('app.url')  }}css/app.css">
-    <script src="{{ config('app.url')  }}js/app.js"></script>
-    <script src="{{ config('app.url')  }}js/bootstrap.js"></script>
+    <link rel="stylesheet" href="{{ config('app.url')  }}build/assets/app-DywpSGTX.css">
+    <script src="{{ config('app.url')  }}build/assets/app-SOzcb3O0.js"></script>
 
 </head>
 <body class="font-sans antialiased">
