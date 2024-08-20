@@ -35,6 +35,15 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
+        Schema::create('attendance', function (Blueprint $table) {
+            $table->id();
+            $table->string('student_id');
+            $table->string('name');
+            $table->string('rfid_card_no');
+            $table->string('room_id');
+            $table->string('event_type');
+            $table->timestamp('timestamp'); 
+        });
     }
 
     /**
@@ -45,5 +54,6 @@ return new class extends Migration
         Schema::dropIfExists('users');
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
+        Schema::dropIfExists('attendance');
     }
 };
